@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+header {
+	background-image: url("../images/header.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	height: 600px;
+	margin-bottom: 2em;
+    display: flex;
+    align-items: flex-end;
+}
+header #links {
+    padding: 50px;
+}
+
+#projects {
+    display: flex;
+    background-color: grey;
+    flex-wrap: wrap;
+}
+
+#projects div {
+    min-width: 200px;
+    min-height: 200px;
+    border: 1px solid blue;
+    margin: 10px;
+    
+
+}
+
+.project-description {
+    flex-grow: 2;
+}
+
+.project-image {
+
+}
