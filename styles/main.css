@@ -15,26 +15,3 @@ header {
 header #links {
     padding: 50px;
 }
-
-#projects {
-    display: flex;
-    background-color: grey;
-    flex-wrap: wrap;
-}
-
-#projects div {
-    min-width: 200px;
-    min-height: 200px;
-    border: 1px solid blue;
-    margin: 10px;
-    
-
-}
-
-.project-description {
-    flex-grow: 2;
-}
-
-.project-image {
-
-}
