@@ -40,7 +40,7 @@ header #links {
 }
 
 .project-description {
-    margin-right: 40px;
+    margin-right: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -57,7 +57,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Vollkorn', serif;
-    font-size: 45px;
+    font-size: 18px;
     color: #cc992c;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -68,20 +68,41 @@ h2 {
     height: 100%;
 }
 
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech {
+    margin: 1em;
+    flex: 0 0 3em;
+}
+
+.tech img {
+    width: 100%;
+    height: 100%;
+}
+
 /*Tablet Screens*/
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 668px) {
     .projects {
         margin-bottom: 50px;
         align-items: flex-start;
     }
-
     .project-container {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 18px;
     }
 }
+
+/* Desktop */
 
 @media all and (min-width: 900px) {
     .project-container {
@@ -95,16 +116,19 @@ h2 {
         margin: 0 auto;
     }
     .thumbnail img {
-        max-width: 400px;
+        max-width: 350px;
         max-height: 280px;
         width: auto;
         height: auto;
     }
     .project-description {
-        margin-left: 40px;
         align-items: left;
         width: 100%;
         font-size: 18px;
+    }
+
+    h2 {
+        font-size: 32px;
     }
 }
 
