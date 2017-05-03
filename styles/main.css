@@ -33,9 +33,8 @@ header #links {
 
 .project-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    padding: 45px;
 
 }
 
@@ -44,6 +43,10 @@ header #links {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.about {
+    width: 80%
 }
 
 h1 {
@@ -76,18 +79,19 @@ h2 {
 
 .tech {
     margin: 1em;
-    flex: 0 0 3em;
+    flex: 0 0 30px;
 }
 
 .tech img {
     width: 100%;
-    height: 100%;
+    height: auto:
 }
 
 /*Tablet Screens*/
 
 @media all and (min-width: 668px) {
     .projects {
+        width: 90%;
         margin-bottom: 50px;
         align-items: flex-start;
     }
@@ -100,12 +104,19 @@ h2 {
     h2 {
         font-size: 18px;
     }
+    .thumbnail img {
+        max-width: 250px;
+        max-height: 180px;
+        width: auto;
+        height: auto;
+    }
 }
 
 /* Desktop */
 
 @media all and (min-width: 900px) {
     .project-container {
+        margin-bottom: 40px;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
