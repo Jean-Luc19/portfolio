@@ -6,6 +6,7 @@ body {
     background: url(../images/indigo-sea.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
+    letter-spacing: 2px;
 }
 
 .container {
@@ -30,6 +31,10 @@ body {
 a {
     color: #eee;
     text-decoration: none;
+    background-color: #cc992c;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
 .projects {
@@ -44,6 +49,8 @@ a {
 }
 
 .project-container {
+
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -61,11 +68,11 @@ a {
 h2 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Vollkorn', serif;
+    /*font-family: 'Vollkorn', serif;*/
     font-size: 18px;
-    color: #29232D;
+    color: #cc992c;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    /*letter-spacing: 10px;*/
 }
 
 .thumbnail img {
@@ -82,6 +89,7 @@ h2 {
         align-items: flex-start;
     }
     .project-container {
+
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
