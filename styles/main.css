@@ -3,10 +3,12 @@
 }
 body {
     font-family: 'Exo', sans-serif;
+    /*background: linear-gradient(to right, #005c97, #363795);*/
     background: url(../images/indigo-sea.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     letter-spacing: 2px;
+     /*background: linear-gradient(to right, #56ccf2, #2f80ed);*/
 }
 
 .container {
@@ -25,13 +27,13 @@ body {
 }
 
 .about span {
-    color: #cc992c;
+    color: #FF4F42;
 }
 
 a {
     color: #eee;
     text-decoration: none;
-    background-color: #cc992c;
+    background-color: #FF4F42;
     padding: 1px 5px;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -58,6 +60,7 @@ a {
 }
 
 .project-description {
+    z-index: 100;
     margin-right: 20px;
 	display: flex;
 	flex-direction: column;
@@ -68,9 +71,8 @@ a {
 h2 {
     margin-top: 0;
     margin-bottom: 0;
-    /*font-family: 'Vollkorn', serif;*/
     font-size: 18px;
-    color: #cc992c;
+    color: #FF4F42;
     text-transform: uppercase;
     /*letter-spacing: 10px;*/
 }
