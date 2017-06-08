@@ -165,22 +165,3 @@ h2 {
       transform: scale(1.15)
     }
 }
-
-/*linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6))*/
-
-
-/*.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.tech {
-    margin: 1em;
-    flex: 0 0 30px;
-}
-
-.tech img {
-    width: 100%;
-    height: auto:
-}*/
