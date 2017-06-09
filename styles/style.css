@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+
+}
+
+/*---------------
+   Headers & Text
+-----------------*/
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.8em;
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+}
+
+/*---------------
+   HERO SECTION
+-----------------*/
+
+.wrapper {
+  background: linear-gradient(
+    rgba(48, 53, 70, 0.5),
+    rgba(48, 53, 70, 0.5)),
+    url(../images/hero-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+
+.open {
+  position: fixed;
+  font-size: 200%;
+  float: left;
+  margin: 1em 0 0 1em;
+  display: block;
+  cursor: pointer;
+}
+
+.nav {
+  width: 0;
+  overflow-x: hidden;
+  text-align: center;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.7s;
+  display: block;
+}
+
+.nav a {
+  clear: left;
+  color: #fff;
+  font-size: 175%;
+  display: block;
+  text-decoration: none;
+  padding: 1em 0;
+  transition: 0.45s;
+}
+
+.close {
+  float: left;
+  margin: 1em 0 0 1em;
+}
+
+.nav a:not(:first-child):hover {
+  background-color: #42c4ac;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-content{
+  text-align: center;
+  max-width: 80%;
+}
+
+.hero-content h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+  letter-spacing: 7px;
+
+}
+
+.hero-content p {
+  font-size: 120%;
+  max-width: 75%;;
+  margin: 1em auto;
+}
+
+/*---------------
+   Projects Title
+-----------------*/
+
+.section-title {
+  min-height: 100px;
+  background-color: #42c4ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);*/
+
+}
+
+.section-title h2 {
+  font-size: 250%;
+  font-weight: 500;
+  letter-spacing: 7px;
+}
+
+/*------------------
+   Projects Section
+--------------------*/
+
+.project-wrapper {
+  background: black;
+}
+.project-wrapper>h2 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.project-wrapper:nth-child(even) {
+  background-color: #42c4ac;
+
+}
+
+.project-wrapper:nth-child(odd) .project-features {
+  margin-left: 20px;
+}
+
+.project-wrapper:nth-child(even) .project-features {
+  margin-right: 20px;
+}
+
+.project,
+.dark,
+.light {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 65px 0px;
+  max-width: 70%;
+
+}
+
+.card {
+  flex: 2 0 300px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: #1D1D1D;
+}
+
+.card-img img {
+  width: 100%;
+  height: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-links {
+  margin: 10px; 0;
+}
+
+.card-icon {
+  font-size: 200%;
+  padding: 0 10px;
+  color: #fff;
+  transition: 0.35s;
+}
+
+.card-icon:hover {
+  color: #1de9c3;
+}
+
+.card-stack {
+  margin-top: 0;
+  font-size: 75%;
+  font-weight: 100;
+  color: #1de9c3;
+}
+
+.project-features {
+  font-size: 85%;
+  flex-grow: 3;
+}
+
+.light {
+  flex-direction: row-reverse;
+}
+
+/*------------------
+   About Section
+--------------------*/
+
+#about-title {
+  background-color: #000;
+}
+
+.about-section {
+
+}
