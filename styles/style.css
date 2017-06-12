@@ -203,6 +203,10 @@ a:active {
   margin: 10px; 0;
 }
 
+.card-links a {
+  border-bottom: none;
+}
+
 .card-icon {
   font-size: 200%;
   padding: 0 10px;
@@ -249,9 +253,21 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-container {
+  margin: 2em 0;
+  max-width: 55%;
 }
 
 .about-text {
-  margin: 2em 0;
-  max-width: 50%;
+
+}
+
+.contact-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
