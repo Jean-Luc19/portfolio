@@ -63,6 +63,7 @@ a:active {
 
 
 .open {
+
   position: fixed;
   font-size: 200%;
   float: left;
@@ -226,6 +227,7 @@ a:active {
 }
 
 .project-features {
+  text-align: justify;
   font-size: 85%;
   flex-grow: 3;
 }
@@ -252,13 +254,14 @@ a:active {
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.);
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
+  justify-content: space-around;
   flex-direction: column;
 }
 
 .about-container {
   margin: 4em 0;
-  max-width: 55%;
+  width: 60%;
+  max-width: 850px;
 }
 
 .about-text {
@@ -273,9 +276,9 @@ a:active {
 --------------------*/
 
 .contact-container {
-  width: 50%;
+  width: 60%;
+  max-width: 850px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -288,7 +291,7 @@ a:active {
 }
 
 .contact-icons {
-  width: 50%;
+
 }
 
 .contact-icons a:link,
@@ -303,7 +306,10 @@ a:active {
 
 .contact-icon {
   font-size: 300%;
-  padding: 0 10%;
+}
+
+.contact-icons a:not(:last-child) {
+  margin-right: 25px;
 }
 
 
@@ -312,18 +318,9 @@ a:active {
 --------------------*/
 
 @media only screen and (max-width: 375px) {
-  /*.content-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-  }*/
 
   .hero-content h1 {
     font-size: 200%;
-    font-weight: 500;
-    letter-spacing: 7px;
   }
 
   .hero-content p {
@@ -334,7 +331,7 @@ a:active {
 
   .project {
     flex-direction: column;
-    justify-content: center;
+
     max-width: 90%;
   }
 
@@ -354,10 +351,6 @@ a:active {
   .project-features h2 {
     text-align: center;
     margin-bottom: 25px;
-  }
-
-  .project-features p {
-    text-align: justify;
   }
 
   .about-container {
@@ -382,6 +375,36 @@ a:active {
   }
   .contact-icon {
     margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .hero-content h1 {
+    font-size: 200%;
+  }
+
+  .hero-content p {
+    font-size: 105%;
+  }
+
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+  }
+
+  .card {
+    max-width: 65%;
+    margin: 25px;
+    align-self: center;
+
+  }
+
+  .project-features h2 {
+    text-align: center;
+    margin-bottom: 25px;
   }
 
 }
