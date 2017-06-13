@@ -115,7 +115,7 @@ a:active {
 }
 
 .hero-content h1 {
-  font-size: 3.5em;
+  font-size: 350%;
   font-weight: 500;
   letter-spacing: 7px;
 
@@ -176,9 +176,7 @@ a:active {
   margin-right: 20px;
 }
 
-.project,
-.dark,
-.light {
+.project {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -255,7 +253,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .about-container {
@@ -305,4 +303,84 @@ a:active {
 .contact-icon {
   font-size: 300%;
   padding: 0 10%;
+}
+
+
+/*------------------
+  MEDIA QUERIES
+--------------------*/
+
+@media only screen and (max-width: 375px) {
+  /*.content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }*/
+
+  .hero-content h1 {
+    font-size: 200%;
+    font-weight: 500;
+    letter-spacing: 7px;
+  }
+
+  .hero-content p {
+    font-size: 90%;
+    max-width: 100%;;
+    margin: 1em auto;
+  }
+
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+  }
+
+  .card {
+    margin-bottom: 25px;
+  }
+
+  .project-wrapper:nth-child(odd) .project-features {
+    margin-left: 0;
+  }
+
+  .project-wrapper:nth-child(even) .project-features {
+    margin-right: 0;
+  }
+
+
+  .project-features h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .project-features p {
+    text-align: justify;
+  }
+
+  .about-container {
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  .about-text {
+    font-size: 90%;
+  }
+
+  .contact-container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .contact-icons {
+    width: 85%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact-icon {
+    margin: 0 auto;
+  }
+
 }
