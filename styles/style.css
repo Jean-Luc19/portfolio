@@ -35,7 +35,7 @@ a {
 }
 a:link,
 a:visited {
-  color: #42c4ac;
+  color: #2EC4B6;
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid transparent;
@@ -45,7 +45,7 @@ a:visited {
 a:hover,
 a:active {
   color: #555;
-  border-bottom: 1px solid #42c4ac;
+  border-bottom: 1px solid #2EC4B6;
 
 
 }
@@ -101,7 +101,7 @@ a:active {
 }
 
 .nav a:not(:first-child):hover {
-  background-color: #42c4ac;
+  background-color: #2EC4B6;
 }
 
 .hero-section {
@@ -135,7 +135,7 @@ a:active {
 
 .section-title {
   min-height: 100px;
-  background-color: #42c4ac;
+  background-color: #2EC4B6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +162,7 @@ a:active {
 }
 
 .project-wrapper:nth-child(even) {
-  background-color: #42c4ac;
+  background-color: #2EC4B6;
 
 }
 
@@ -215,14 +215,14 @@ a:active {
 }
 
 .card-icon:hover {
-  color: #1de9c3;
+  color: #2EC4B6;
 }
 
 .card-stack {
   margin-top: 0;
   font-size: 75%;
   font-weight: 100;
-  color: #1de9c3;
+  color: #2EC4B6;
 }
 
 .project-features {
@@ -243,7 +243,7 @@ a:active {
 }
 
 .about-section {
-  min-height: 50vh;
+  min-height: 100vh;
   background: linear-gradient(
     rgba(48, 53, 70, 0.95),
     rgba(48, 53, 70, 0.95)),
@@ -262,6 +262,8 @@ a:active {
 }
 
 .about-text {
+  font-size: 115%;
+  font-weight: 100;
 
 }
 
