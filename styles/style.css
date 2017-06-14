@@ -317,7 +317,7 @@ a:active {
   MEDIA QUERIES
 --------------------*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
 
   .hero-content h1 {
     font-size: 200%;
