@@ -52,6 +52,15 @@ a:active {
    HERO SECTION
 -----------------*/
 
+canvas {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
 .wrapper {
   background: linear-gradient(
     rgba(48, 53, 70, 0.5),
@@ -252,16 +261,13 @@ a:active {
     url(../images/trees-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
 }
 
 .about-container {
-  margin: 4em 0;
+  margin: 0 auto;
   width: 60%;
   max-width: 850px;
+  padding: 10% 0;
 }
 
 .about-text {
@@ -276,10 +282,12 @@ a:active {
 --------------------*/
 
 .contact-container {
+  margin: 0 auto;
+  padding-bottom: 15%;
   width: 60%;
   max-width: 850px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contact-container:focus {
@@ -331,7 +339,6 @@ a:active {
 
   .project {
     flex-direction: column;
-
     max-width: 90%;
   }
 
@@ -354,8 +361,7 @@ a:active {
   }
 
   .about-container {
-    max-width: 100%;
-    padding: 25px;
+    width: 85%;
   }
 
   .about-text {
@@ -365,13 +371,14 @@ a:active {
   .contact-container {
     width: 100%;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   .contact-icons {
     width: 85%;
     margin-bottom: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
   .contact-icon {
     margin: 0 auto;
